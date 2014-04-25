@@ -1,0 +1,4 @@
+verilog work "../rtl/vga/vga_sync.v"
+verilog work "../rtl/vga/vga_char.v"
+verilog work "../rtl/clock/clock.v"
+verilog work "../rtl/main.v"

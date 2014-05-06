@@ -1,0 +1,48 @@
+##
+ #  EK-Miniterm - A terminal emulator for Elektor FPGA Module EK120099
+ #
+ # Copyright (C) 2014 Saint-Genest Gwenael <gwen@agilack.fr>
+ #
+ # This is free software; you can redistribute it and/or modify it
+ # under the terms of the GNU General Public License as published
+ # by the Free Software Foundation; either version 2, or (at your option)
+ # any later version.
+ #
+ # This program is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ # General Public License for more details.
+ #
+ # You should have received a copy of the GNU Library General Public
+ # License along with this program; if not, write to the Free Software
+ # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+ # USA.
+#
+NET "clk50_i"   LOC="P86" | IOSTANDARD = "LVCMOS33" | PERIOD = 20ns;
+NET "clk14_i"   LOC="P84" | IOSTANDARD = "LVCMOS33" | PERIOD = 67ns;
+
+NET "uart_tx_o"  LOC="P24" | IOSTANDARD = "LVCMOS33"; # L01P_2 (module pin 44)
+NET "uart_rx_i"  LOC="P23" | IOSTANDARD = "LVCMOS33" | PULLUP; # L07N_3 (module pin 43)
+NET "uart_rts_o" LOC="P48" | IOSTANDARD = "LVCMOS33"; # L08N_2 (module pin  7)
+NET "uart_cts_i" LOC="P49" | IOSTANDARD = "LVCMOS33"; # L09P_2 (module pin  8)
+
+#NET "ps2_clk_i"  LOC="P9"  | IOSTANDARD = LVCMOS33 | PERIOD = 200.000;
+#NET "ps2_dat_i"  LOC="P95" | IOSTANDARD = LVCMOS33;
+
+#NET "vga_hs_o"   LOC="P66" | IOSTANDARD = LVCMOS33; # L05N_1 (module pin 17)
+#NET "vga_vs_o"   LOC="P67" | IOSTANDARD = LVCMOS33; # L06P_1 (module pin 18)
+#NET "vga_red_o"  LOC="P61" | IOSTANDARD = LVCMOS33; # L03N_1 (module pin 14)
+#NET "vga_grn_o"  LOC="P62" | IOSTANDARD = LVCMOS33; # L04P_1 (module pin 15)
+#NET "vga_blu_o"  LOC="P65" | IOSTANDARD = LVCMOS33; # L05P_1 (module pin 16)
+
+# Switchs
+#NET "sw_i<0>"    LOC="P16" | IOSTANDARD = "LVCMOS33"; # Board PIN 39
+#NET "sw_i<1>"    LOC="P17" | IOSTANDARD = "LVCMOS33"; # Board PIN 40
+#NET "sw_i<2>"    LOC="P18" | IOSTANDARD = "LVCMOS33"; # Board PIN 41
+#NET "sw_i<3>"    LOC="P22" | IOSTANDARD = "LVCMOS33"; # Board PIN 42
+
+# Tests points
+#NET "dbg1"      LOC="P83" | IOSTANDARD = "LVCMOS33"; # TP6
+#NET "dbg2"      LOC="P71" | IOSTANDARD = "LVCMOS33"; # TP5
+#NET "dbg3_o" LOC="P22" | IOSTANDARD = LVCMOS33; # P42
+#NET "dbg4_o" LOC="P18" | IOSTANDARD = LVCMOS33; # P41

@@ -1,0 +1,28 @@
+##
+ #  EK-Miniterm - A terminal emulator for Elektor FPGA Module EK120099
+ #
+ # Copyright (C) 2014 Saint-Genest Gwenael <gwen@agilack.fr>
+ #
+ # This is free software; you can redistribute it and/or modify it
+ # under the terms of the GNU General Public License as published
+ # by the Free Software Foundation; either version 2, or (at your option)
+ # any later version.
+ #
+ # This program is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ # General Public License for more details.
+ #
+ # You should have received a copy of the GNU Library General Public
+ # License along with this program; if not, write to the Free Software
+ # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,
+ # USA.
+#
+NET "clk50_i"   LOC="P86" | IOSTANDARD = "LVCMOS33" | TNM = tnm_50 ;
+
+TIMESPEC TS01 = PERIOD tnm_50 20ns;
+
+NET "mem_clk_o"     LOC="P95" | IOSTANDARD = LVCMOS33; # L06N_0 (module pin 28)
+NET "mem_cs_o"      LOC="P94" | IOSTANDARD = LVCMOS33; # L06P_0 (module pin 27)
+NET "mem_dat_io<0>" LOC="P2"  | IOSTANDARD = LVCMOS33; # L01P_3 (module pin 29)
+NET "mem_dat_io<1>" LOC="P5"  | IOSTANDARD = LVCMOS33; # L02N_3 (module pin 32)

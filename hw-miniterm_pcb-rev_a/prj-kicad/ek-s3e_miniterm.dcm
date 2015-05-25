@@ -1,0 +1,26 @@
+EESchema-DOCLIB  Version 2.0  Date: Tue 11 Mar 2014 01:09:41 AM CET
+#
+$CMP CONN_1
+D 1 pin
+K CONN
+$ENDCMP
+#
+$CMP CONN_VGA
+D VGA port
+K CONN
+$ENDCMP
+#
+$CMP R
+D Resistance
+K R DEV
+$ENDCMP
+#
+$CMP T_NPN
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP T_PNP
+F transistors/bipolar/*.*
+$ENDCMP
+#
+#End Doc Library
